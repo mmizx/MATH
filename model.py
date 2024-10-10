@@ -210,8 +210,8 @@ def LogReg(xtrain,xtest,ytrain,ytest,graph,name):
     if graph==True:
         #THIS CAN BE USED TO PLOT A SCATTER PLOT OF THIS LOG MODEL but i took it out
         #graph ring age in ShellWeight (best feature) dimension
-        #plt.scatter(xtrain[:,7],ytrain,s=4)
-        #plt.scatter(xtest[:,7],ytest,s=4)
+        #plt.scatter(xtrain[:,-1],ytrain,s=4)
+        #plt.scatter(xtest[:,-1],ytest,s=4)
         #plt.xlabel('ShellWeight')
         #plt.ylabel('Age Classification:\n {0 if age<7, 1 if age>7}')
         #plt.annotate('RMSE: ' + str(round(rmse,3))+'\nR_2: ' + str(round(rsquared,3))+'\nAcc: ' + str(round(acc,3)), xy=(np.mean(xtrain), np.mean(ytrain)))
